@@ -1,0 +1,283 @@
+/*header is from here*/
+header{width: 100%;
+	   background-color: #1dace0;
+	   display: flex;
+	   justify-content: space-between;
+	   align-content: flex-end;
+	   font-size: 18px;
+	   position: fixed;
+	   }
+
+header img{
+			width: 60px;
+		   }
+
+.icon{
+	  display: flex;
+	  align-items: center;
+	  margin-left: 60px;
+	  color: white;
+	   }
+
+header span strong{
+					color: #eae51f;
+				   }
+
+.header-right{
+			  display: flex;
+		      justify-content: space-between;
+		      align-items:center;
+		      margin-right: 80px;
+		      }
+
+header ul li{
+			 margin-left: 20px;
+			 color: white;
+			 }
+/*header is from here*/	
+.welcome {
+	     height: 500px;
+		 background-image: url(../img/background1.jpg);
+         }
+
+.welcome h1{padding-top: 100px;
+	 	    font-size: 70px;
+	 	    text-align: center;
+	 	    color: white;
+            }
+.welcome ul{margin-top: 30px;
+		    font-size: 40px;
+			text-align: center;
+	 	    color: white;
+		    } 
+
+.buttons{
+		 margin-top: 60px;
+		 display: flex;
+		 justify-content:center; 
+		 }
+
+button {
+		margin-left: 30px;
+		width: 110px;
+		height:  50px;
+		border: solid black;
+		border-radius: 5px;
+		font-size: 15px;
+		font-weight: 900;
+		color: white;
+		cursor: pointer;
+		}
+
+.register{background-color: rgba(29,172,224, .5);}
+
+.Log-in{background-color: rgba(236,227,35,.5);}	
+
+.register:hover{
+			  background-color: rgba(29,172,224,1);
+                }			 		                        
+		 
+.Log-in:hover{
+			  background-color: rgba(236,227,35,1);
+			  }	
+
+/*Main lifestyleはここから！*/
+.lifestyle{
+		　　width: 100%;
+			height: 400px;
+		　　}
+.lifestyle h1{
+		      font-size: 40px;
+			  text-align: center;
+			  margin-top: 20px;
+			  }
+
+.images{
+		display: flex;
+		justify-content: space-around;
+		margin-top: 20px;
+
+		}
+
+.images img{
+	        width: 300px;
+			height: 300px;
+		    }
+
+.images p{text-align: center;}		    					  					  	 
+ 
+/*Main lifestyleはここから！*/
+
+/*Asideはここから*/
+
+aside{
+	  width: 100%;
+	  height:380px;
+	  background-color: #F0F8FF;
+	  }
+
+aside h1{
+		 font-size: 40px;
+		 text-align: center;
+	     margin-top: 20px;
+		 text-align: center;
+		 }
+
+form div input{width: 200px;
+			   height: 20px;
+			   margin-bottom: 20px;
+			   }		 
+
+.form-all{margin-top: 10px;
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		  padding-right: 10px;
+		  }
+
+.form-left{height: 80px;
+		   margin-top: 0;
+		   margin-right: 50px;
+		   }
+
+textarea{
+		 width: 200px;
+		 height: 70px;
+		}		   		  
+
+.final-button{
+			  margin-left: 650px;
+			  margin-top: 20px;
+			  font-size: 15px;
+			  font-weight: 900;
+			  color: white;
+			  cursor: pointer;
+			  background-color:rgba(29,172,224, .5); 
+  			  }
+
+.final-button:hover{background-color:rgb(29,172,224)}  			  
+
+.Option{display: flex;
+		justify-content: center;
+		margin-top: 30px;
+		}
+
+.Destination{
+			display: flex;
+			justify-content: center;
+			margin-top: 30px;
+			font-size: 20px;
+			}
+
+aside select {
+			  margin-left: 40px;
+			  }					
+  			  
+footer{
+	   height: 40px;
+	   width: 100%;
+	   background-color: #233f51;
+	   display: flex;
+	   justify-content: space-between;
+	   align-content: flex-end;
+	   font-size: 18px;
+	   margin-top: 10px;
+	   }
+
+footer img{width: 60px;}
+
+footer span strong{
+					color: #eae51f;
+				   }
+
+.footer-right{
+			  margin-top: 30px;
+			  margin-right: 10px;
+			  color: white;
+			  }		
+
+/*Responsive*/
+
+/*小型PC用*/
+@media screen and (max-width: 1280px)
+				  {
+				  	.images {margin-right: 20px;}
+				  }
+
+/*スマフォ用*/
+@media screen and (max-width:480px)
+				  {
+    body{min-width: 375px;}
+    /*header*/
+    header{width: 100%;}
+    .icon{margin-left: 20px;}
+    .icon span{display: none;}
+    .header-right{display: none;}
+
+    /*Welcome*/
+    .welcome h1{font-size: 30px;}
+    .welcome ul{font-size: 24px;
+    			margin-top: 30px;
+    			}
+    .buttons{margin-top: 30px;
+    		 display: flex;
+    		 flex-direction: column;
+    		 align-items: center;
+    		 justify-content: center;
+    		 }
+    
+    button{font-size: 20px;
+           margin-bottom: 20px;}
+
+
+    /*curriculum*/
+    .lifestyle{height: 1030px;}
+    .lifestyle h1{font-size: 27px;}
+    .images {display: flex;
+    		 justify-content: center;
+    		 align-items: center;
+    		 flex-flow: column nowrap;}
+	.image li{display: flex;
+			  justify-content: center;
+			  align-items: center;}    		 			  
+	.images img{width: 300px;
+				height: 300px;}
+	.images p{margin-bottom: 10px;
+			  margin-top: 5px;}				
+    
+    /*contact*/
+    aside{height: 450px;}
+    aside h1{font-size: 25px;}
+    .form-all{display: flex;
+    		  flex-flow: column;
+    		  align-items: center;
+    		  justify-content: center;}
+    .form-left{margin-right: 20px;}
+    form div input{width: 200px;
+    			   margin-bottom: 15px;
+    			   margin-right: 0;
+    			   }
+	textarea{margin-left: -23px;}    			   
+	#male{width: 50px;}
+	#female{width: 50px;}    			   		     			   
+
+    .final-button{margin-left: 130px;}
+    .Option{margin-top: 10px;
+    		font-size: 15px;
+    		justify-content: space-around;}
+    .Destination{margin-top: 15px;
+    			 margin-bottom: 30px;
+    			 font-size: 15px;}
+    /*footer*/
+    footer h1{
+    		  font-size: 10px;
+    		  text-align: center;}
+				  
+	footer .icon{display: none;}
+	.footer-right{margin-top: 5px;
+				  margin-right: 0;
+				  }
+	footer{display: flex;
+		   justify-content: center;}				  
+
+	}			  

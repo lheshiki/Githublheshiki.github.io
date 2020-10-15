@@ -1,0 +1,23 @@
+.contact{margin: 0 auto;
+		 width: 960px;
+		 background-color: #ccc;
+		 padding: 30px 50px;
+		 font-size: 20px;
+		 }
+
+.label{width: 120px;
+       margin-right: 80px;}
+
+.input-field{width: 240px;
+			 height: 40px;
+			 line-height: 40px;
+			 border-width: 2px;} 
+
+button{width: 120px;
+	   height: 50px;
+	   background-color: #009cd3;
+	   color: #fff;
+	   font-size: 20px;
+	   text-align: center;
+	   border-radius: 5px;
+	   margin-left: 200px;}			       		 
