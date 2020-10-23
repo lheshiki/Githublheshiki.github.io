@@ -157,16 +157,26 @@ console.log('----------------2. 素数を表示するプログラム------------
 //     }
 
 
-    let rep=0
-for (let s = 1;s <= 100;s++)
-  {
-    rep = 0; // これが大事。ないと約数の数がどんどん加算されていくので、大きいループの中で一旦リセットする
-    for (let i = 1; i <= s; i++)
-    {
-     if (s % i === 0) {rep++}
-    }
-     if (rep === 2) {console.log(s)};
-  }
+// for (let s = 1;s <= 100;s++)
+//   {
+//     rep = 0; // これが大事。ないと約数の数がどんどん加算されていくので、大きいループの中で一旦リセットする
+//     for (let i = 1; i <= s; i++)
+//     {
+//      if (s % i === 0) {rep++}
+//     }
+//      if (rep === 2) {console.log(s)};
+//   }
+
+
+for (var i = 1; i <= 100; i++) 
+	{
+	  var rep = 0
+	 for (var l = 1; l <= i; l++) 
+	 	{
+	 	if (i % l === 0) {rep++}
+	 	}
+	 if (rep === 2) {console.log(i)}
+	}
 
       // console.log("s="+ s);　//デバッグ用
       // console.log("i="+ i);  //デバッグ用
