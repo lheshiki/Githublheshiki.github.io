@@ -129,7 +129,7 @@ for (n = 1; n <= 9; n++)
 // チャレンジ問題
 console.log('----------------1. 女湯問題----------------');
 
-let customer = {gender:'male', age:6}
+let customer = {gender:'Other', age:9}
 	if (customer['gender'] === 'female'|| customer['age'] <= 8)
 		{console.log('Pass')}
 	else {console.log('Not pass')}
@@ -145,28 +145,29 @@ let customer = {gender:'male', age:6}
 console.log('----------------2. 素数を表示するプログラム----------------');
 
 let rep=0
+
 for (var s = 1;s <= 20;s++) 
 	{
-	  for (var i = 1; i <= 20; i++) 
+	  for (var i = 1; i <= s; i++) 
 		{
-
+		 if (s % i === 0) {rep++}
 		}
-		if (s % i === 0) {rep++}
-		 if (rep === 2) {console.log()} 
+		 console.log(rep);
+		 // if (rep === 2) {console.log()} 
     }
 
 
-for (let i = 2; i < 100; i++) {
-  for (let j = 2; j <= i; j++) {
-    if (i % j === 0 && j < i) {
-      break;
-    } 
+// for (let i = 2; i < 100; i++) {
+//   for (let j = 2; j <= i; j++) {
+//     if (i % j === 0 && j < i) {
+//       break;
+//     } 
 
-    if (i === j) {
-      console.log(i);
-    }
-  }
-}
+//     if (i === j) {
+//       console.log(i);
+//     }
+//   }
+// }
 /**
  * 100以下の素数を表示してください。
  * 1は素数には含みません。
