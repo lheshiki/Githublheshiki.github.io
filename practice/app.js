@@ -144,18 +144,32 @@ let customer = {gender:'Other', age:9}
 
 console.log('----------------2. 素数を表示するプログラム----------------');
 
-let rep=0
+// let rep=0
 
-for (var s = 1;s <= 20;s++) 
-	{
-	  for (var i = 1; i <= s; i++) 
-		{
-		 if (s % i === 0) {rep++}
-		}
-		 console.log(rep);
-		 // if (rep === 2) {console.log()} 
+// for (var s = 1;s <= 20;s++) 
+// 	{
+// 	  for (var i = 1; i <= s; i++) 
+// 		{
+// 		 if (s % i === 0) {rep++}
+// 		}
+// 		 console.log(rep);
+// 		 // if (rep === 2) {console.log()} 
+//     }
+
+
+    let rep=0
+for (let s = 1;s <= 100;s++)
+  {
+    rep = 0; // これが大事。ないと約数の数がどんどん加算されていくので、大きいループの中で一旦リセットする
+    for (let i = 1; i <= s; i++)
+    {
+     if (s % i === 0) {rep++}
     }
+     if (rep === 2) {console.log(s)};
+  }
 
+      // console.log("s="+ s);　//デバッグ用
+      // console.log("i="+ i);  //デバッグ用
 
 // for (let i = 2; i < 100; i++) {
 //   for (let j = 2; j <= i; j++) {
