@@ -89,11 +89,15 @@ printMaxNum(9,2)
 
 console.log('-----------------getSquared------------------')
 
+// リターンは戻り値、返り値は「return 値;」の形で、実行した側に戻される値
+// 引数と逆の方向に値を送る
+
 function getSquared(num1)
 		{
-			console.log(num1 * num1)
+			return num1 * num1
 		}
-getSquared(8)
+		var result  = getSquared(8)
+		console.log(result/2)
 
 
 console.log('-----------------createSelfIntroductionText------------------')
@@ -107,21 +111,26 @@ console.log('-----------------isEvenNumber------------------')
 
 function isEvenNumber(number)
 		{if (number % 2 === 0) 
-		 {console.log(true)}
-		 else{console.log(false)}
+		 { return true}
+		 else{return false}
 		}
+var even = isEvenNumber(4)
+console.log(even)
+
 
 isEvenNumber(3)
 
-console.log('-----------------isEvenNumber------------------')
+console.log('-----------------SeedKun------------------')
 
 function isSeedKun(moji)
 		{if (moji === 'SeedKun')
-		 {console.log(true)}
-		 else{console.log(false)}
+		 { return true}
+		 else{return false}
 		}
 
-isSeedKun('SeedKun')
+var result = isSeedKun('SeedKun')
+console.log(result)
+
 
 
 
