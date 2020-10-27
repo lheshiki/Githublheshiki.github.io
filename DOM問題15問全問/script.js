@@ -151,9 +151,6 @@ bt.addEventListener('click',function final(){
 												 else{link_list.appendChild('')}        
 
 											 })
-	 				
-
-
 	 				}
 	
 
