@@ -92,27 +92,36 @@ btn.addEventListener('click',function()
 var btn = document.querySelector('.q12-btn')
 
 btn.addEventListener('click',function(){
+										var btn = document.querySelector('.q12-btn')
 										var msg = document.createElement('p')
 										var result = document.querySelector('.q12-result')
 										msg.textContent = btn.textContent
-									     result.appendChild(msg)})
+									    result.appendChild(msg)
+									    }
+					)
      
 
 // Q 13
 // 飛ばしていいです。
 var btn = document.querySelector('.q13-btn')
-var msg = document.createElement('li')
-var list = document.querySelector('#q13-box')
-var melon = document.querySelector('#melon')
 
-btn.addEventListener('click',function(){msg.textContent = 'リンゴ'
-list.insertBefore(msg, melon)})
+btn.addEventListener('click',function(){
+										var msg = document.createElement('li')
+										var list = document.querySelector('#q13-box')
+										var melon = document.querySelector('#melon')
+										msg.textContent = 'リンゴ'
+										list.insertBefore(msg, melon)
+									    }
+					)
 
 // Q 14
 var btn = document.querySelector('.q14-btn')
-var chicken = document.querySelector('#chicken')
 
-btn.addEventListener('click',function(){chicken.remove()})
+btn.addEventListener('click',function(){
+										var chicken = document.querySelector('#chicken')
+										chicken.remove()
+									   }
+					)
 
 // Q 15 (難)
 // switchまたはifを使います。

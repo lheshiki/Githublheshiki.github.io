@@ -1,20 +1,73 @@
 h1 {
 	text-align: center;
 	font-size: 50px;
+	color: white;
 	}
 form {
 	  display: flex;
 	  justify-content: center; 
 	  }
 
+body{
+	 background: linear-gradient(-45deg,rgba(0, 255, 255, .8),rgba(0, 0, 0, .8)),
+     url(img/triangles.png);
+     background-size: cover;
+ 	}	  
+
 #todo{width: 500px;
 	  height: 50px;
-	  
 	  }
 
-#add{width: 100px;
+.btn1{
+	 width: 100px;
 	 height: 55px;
 	 background-color: #336666;
 	 font-style: bold;
+	 }
 
-	}	  
+#list{
+	  display: flex;
+	  justify-content: center;
+	  }
+
+ul{display: flex;
+   flex-direction: column;
+   align-items: center;
+   }
+
+li {display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 10px;
+	font-size: 25px;
+	background-color: rgb(192,192,192);
+	width: 500px;
+	height: 50px;
+	border:solid 1px;
+	text-align: left;
+    border-radius: 5px;
+    }
+
+li div {position: relative;
+		margin-right: 10px;}
+
+i {
+   font-size: 30px;
+  }   
+
+i:hover{font-size: 40px;
+		color: white;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
