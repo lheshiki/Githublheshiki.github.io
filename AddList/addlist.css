@@ -14,8 +14,9 @@ body{
      background-size: cover;
  	}	  
 
-#todo{width: 500px;
+.todo{width: 500px;
 	  height: 50px;
+	  font-size: 25px;
 	  }
 
 .btn1{
@@ -23,6 +24,8 @@ body{
 	 height: 55px;
 	 background-color: #336666;
 	 font-style: bold;
+	 color: white;
+	 font-size: 20px
 	 }
 
 #list{
@@ -35,7 +38,7 @@ ul{display: flex;
    align-items: center;
    }
 
-li {display: flex;
+.add_list {display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding-left: 10px;
@@ -49,15 +52,27 @@ li {display: flex;
     }
 
 li div {position: relative;
-		margin-right: 10px;}
+		}
 
 i {
    font-size: 30px;
+   margin-right: 10px;
   }   
 
 i:hover{font-size: 40px;
 		color: white;}
 
+#button_div{display: flex;
+			justify-content: center;}
+
+#submit{
+		width: 100px;
+	 	height: 55px;
+	 	background-color: #336666;
+	 	font-style: bold;
+	 	color: white;
+	 	font-size: 20px;
+	 	}			
 
 
 

@@ -1,0 +1,57 @@
+main {
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: center;
+	  align-items: center;
+	  }
+
+h1{font-size: 60px;}
+
+p{font-size: 30px;}
+
+main div{width: 700px;
+		 text-align: center;}
+
+.input{
+	   width: 90px;
+	   height: 30px;
+	   font-size: 30px;
+	   }
+
+#cry{width: 160px;}
+
+#just{width: 200px;}
+
+#whenever{width: 400px;}
+
+#crumble{width: 110px;}
+
+#mountains{width: 140px;}
+
+body{display: flex;
+	 flex-direction: column;
+	 align-items: center;
+	 }
+#submit{width: 80px;
+		height: 50px;
+		background-color: black;
+		color:white;
+		border-radius: 5px;
+		}
+
+#link_div{padding-top: 20px;}
+
+a{font-size: 30px;}
+
+.fas{
+	font-size: 100px;
+	}
+
+.fa-guitar{font-size: 100px;
+		   color: #FF8C00;
+		   background: -webkit-linear-gradient(0deg, #40E0D0, #FF8C00, #FF0080);
+		   -webkit-background-clip: text;
+		   -webkit-text-fill-color: transparent;
+		  }
+
+#icon_div{padding-top: 20px;}
