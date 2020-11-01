@@ -1,3 +1,4 @@
+
 let btn = document.querySelector('#submit')
 btn.addEventListener('click',function()
 					  {
@@ -5,6 +6,7 @@ btn.addEventListener('click',function()
 					  	let link_parent = document.querySelector('#link_div')
 					  	let icon_parent = document.querySelector('#icon_div')
 					  	let link = document.createElement('a')
+					  	link.classList.add('results')
 					  	let icon = document.createElement('i')
 					  	
 
@@ -28,23 +30,34 @@ btn.addEventListener('click',function()
 					  	 	 input.value === 'afraid'
 					  	 	 )
 					  		{res++}
-					  	} if (res >= 7 )
+					  	} 
+					        if (res >= 6 )
 					  		{
+					  		 link.classList.add('congrats')
 					  		 link.textContent = 'Congratulations you passed! Click here and go see the lyrics in Japanese!'
-					  		 link.href = 'https://ameblo.jp/moai0920/entry-11448072661.html'
+					  		 link.href = 'http://sate-konokyokuwa.blog.jp/2019-01-30.html'
 					  		 icon.classList.add('fas')
 					  		 icon.classList.add('fa-guitar')
 					  		 icon.classList.add('fa-spin')
-					  		 link_parent.appendChild(link)
-					  		 icon_parent.appendChild(icon)
 					  		}
 					  	  else{
+					  	  		link.classList.add('Sorry')
+					  	  		console.log(link)
 					  	  		link.textContent = 'Sorry! you missed a lot of words... please try again!'
 					  	  		icon.classList.add('fas')
 					  	  		icon.classList.add('fa-poo')
-					  	  		link_parent.appendChild(link)
-					  	  		icon_parent.appendChild(icon)
 					  	  	  }
+					  	 
+					  	  let result_count = document.querySelectorAll('.results')
+					  	  if (result_count.length >=1)
+					  	  	 {
+					  	  	  link.remove()
+					  	  	  icon.remove()
+					  	  	 }
+					  	  else{
+					  	  	   link_parent.appendChild(link)
+					 	  	   icon_parent.appendChild(icon)
+					 	  	  }
 					   }
 
 					)
