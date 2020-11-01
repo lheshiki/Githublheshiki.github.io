@@ -30,6 +30,7 @@ btn.addEventListener('click',function()
 					  	 	 input.value === 'afraid'
 					  	 	 )
 					  		{res++}
+					  	  else{input.style.color = 'red'}
 					  	} 
 					        if (res >= 6 )
 					  		{
