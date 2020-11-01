@@ -100,10 +100,11 @@ function add_li_tag(task_text){
 let btn2 = document.querySelector('#submit')
 btn2.addEventListener('click',function(){ let programming_rules = document.querySelectorAll('.add_list')
 										  let res = 0
-										  if (programming_rules.length>7)
-										  	 {let notification = alert('プログラミングには７ヶ条しかないよ！'+(programming_rules.length-7)+'個余裕に書いてます')
-										  	  result.remove()
-										  	 }
+										  let result_list = document.querySelector('#result')
+										  let result = document.createElement('p')
+										  result.classList.add('result')
+
+										  
 										  for (let rule of programming_rules)
 										  	  {
 										  		if (
@@ -118,9 +119,7 @@ btn2.addEventListener('click',function(){ let programming_rules = document.query
 										  		   {res++}
 										  		else{rule.style.color ='red'}
 										  	  } 
-										  	  	let result_list = document.querySelector('#result')
-										  	  	let result = document.createElement('p')
-										  	  	result.classList.add('result')
+										  	  	
 
 										  	  	if (res < 5)
 										  	  	   {										  	  	   
@@ -130,9 +129,13 @@ btn2.addEventListener('click',function(){ let programming_rules = document.query
 										  	  	else{										  	  		 
 										  	  		 result.textContent = 'あなたの点数は'+Math.round(res/7*100)+ '点で合格です！初心を忘れずべからず！^_^'
 										  	  		}
-										 		let results = document.querySelectorAll('.result')
-										 		if (results.length >=1) {result.remove()}
-										 		else{result_list.appendChild(result)}
+										 		if (programming_rules.length>7)
+												  	 {let notification = alert('プログラミングには７ヶ条しかないよ！'+(programming_rules.length-7)+'個余裕に書いてます')
+												  	  result.remove()
+												  	 }
+												  else{let results = document.querySelectorAll('.result')
+												 		if (results.length >=1) {result.remove()}
+												 		else{result_list.appendChild(result)}}
 										 		
 										}
 					  )
