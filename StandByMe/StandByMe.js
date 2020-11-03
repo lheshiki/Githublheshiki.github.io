@@ -21,13 +21,10 @@ btn.addEventListener('click',function()
 					  	 	 input.value === 'stand' ||
 					  	 	 input.value === 'darling' ||
 					  	 	 input.value === 'sky' ||
-					  	 	 input.value === 'tumble' ||
 					  	 	 input.value === 'mountains' ||
-					  	 	 input.value === 'crumble' ||
 					  	 	 input.value === "I won't cry" ||
-					  	 	 input.value === 'just as long as' ||
-					  	 	 input.value === 'whenever you are in trouble' ||
-					  	 	 input.value === 'afraid'
+					  	 	 input.value === 'just as long as you stand' ||
+					  	 	 input.value === 'whenever you are in trouble'
 					  	 	 )
 					  		{res++}
 					  	  else{input.style.color = 'red'}
