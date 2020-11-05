@@ -1,4 +1,16 @@
 
+let info = ['moon','afraid','stand']
+
+
+
+let input_all = document.querySelectorAll('.input')
+i = 0
+for (var input of input_all)
+	{i++;
+	 if (info[i] === undefined) {input.value = ''}
+	 input.value = info[i]
+	}
+
 let btn = document.querySelector('#submit')
 btn.addEventListener('click',function()
 					  {
@@ -10,9 +22,9 @@ btn.addEventListener('click',function()
 					  	let icon = document.createElement('i')
 					  	
 
-					  	let input_all = document.querySelectorAll('.input')
+					  	
 
-
+					  	
 					  	for (let input of input_all)
 					  	{
 					  	 if (
