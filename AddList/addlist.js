@@ -86,7 +86,8 @@ function add_li_tag(task_text){
 											 						 	 // data.splice('基準','消すデータの数')
 											 						 	 // data.indexOf('ホノルルマラソンの準備をする')　→ ０番目に入ってたら、数字が0が返ってくる
 											 						 	 
-											 						 	 data.splice(data.indexOf(this.parentElement),1)
+											 						 	 data.splice(data.indexOf(this.parentElement.textContent),1)
+											 						 	 
 
 											 						 	 // 削除済の配列を全体的にローカルストレージに上履き保存
 											 						 	 localStorage.setItem('todoList',JSON.stringify(data))

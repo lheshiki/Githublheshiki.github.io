@@ -283,23 +283,22 @@ footer .footer-right {
     display: none;
   }
 
-  .header-right{
-    display: none;
-  }
+  
+  
 
   .drawer{
           position: absolute;
-          top: 90px;
+          top: 80px;
           right: -200px;
           height: 100vh;
           width: 200px;
           background-color: rgba(8, 8, 8, .5);
-          transition-duration: 1000ms;
+          transition-duration: 6000ms;
         }
 
-.drawer.on{
-            transform:translateX(-200px);
-            transition-duration: 1000ms;
+.drawer.on{ 
+            right: 0px;
+            transition-duration: 6000ms;
            }
 
   #toggle{

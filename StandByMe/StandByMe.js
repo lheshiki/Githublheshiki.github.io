@@ -6,9 +6,10 @@ let info = ['moon','afraid','stand']
 let input_all = document.querySelectorAll('.input')
 i = 0
 for (var input of input_all)
-	{i++;
-	 if (info[i] === undefined) {input.value = ''}
-	 input.value = info[i]
+	{
+	 if (info.length <= i ) {input.value = ''}
+	 else{input.value = info[i]}
+	 i++;
 	}
 
 let btn = document.querySelector('#submit')
