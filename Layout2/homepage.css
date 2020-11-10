@@ -224,7 +224,7 @@ i{font-size:100px;
 		  left:0} 
 }
 
-
+.h1{font-style: ital}
 /*For Smartphones*/
 @media screen and (max-width:480px){
 #body1{margin-left: 0;}
