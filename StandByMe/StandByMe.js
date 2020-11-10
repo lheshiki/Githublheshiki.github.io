@@ -1,6 +1,8 @@
 
-let info = ['moon','afraid','stand']
-
+let info;
+if (JSON.parse(localStorage.getItem('words')))
+{info = JSON.parse(localStorage.getItem('words'))}
+else{info = []}
 
 
 let input_all = document.querySelectorAll('.input')
@@ -15,6 +17,8 @@ for (var input of input_all)
 let btn = document.querySelector('#submit')
 btn.addEventListener('click',function()
 					  {
+					  	
+
 					  	let res = 0
 					  	let link_parent = document.querySelector('#link_div')
 					  	let icon_parent = document.querySelector('#icon_div')
@@ -22,8 +26,15 @@ btn.addEventListener('click',function()
 					  	link.classList.add('results')
 					  	let icon = document.createElement('i')
 					  	
+					  	info = []
+					  	console.log(info)
+					  	for(var input of input_all)
+					  	{info.push(input.value)
+					  	 // console.log(info)
+					  	 i++}
 
-					  	
+					  	localStorage.setItem('words',JSON.stringify(info))
+					  	console.log(JSON.parse(localStorage.getItem('words')))
 
 					  	
 					  	for (let input of input_all)
