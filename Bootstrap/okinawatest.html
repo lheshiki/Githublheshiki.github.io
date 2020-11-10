@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="okinawatest.css">
+    <script src="https://kit.fontawesome.com/b1874ca7b5.js" crossorigin="anonymous"></script>
+    <title>Okinawantest</title>
+  </head>
+  <body>
+    <!-- header! -->
+    <header>
+    <h1 class="nav justify-content-center text-white bg-dark font-italic font-weight-bold align-items-center" style="height: 120px;">沖縄県民度診断テスト！</h1>
+    <h2 class="nav justify-content-center text-white bg-dark font-italic font-weight-bold align-items-center" >あなたは果たして沖縄に残る資格はあるのか...?</h2>
+    </header>
+    <main class="okinawa-slide">
+      <div class="container">
+       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        <img src="FE2CFA1A-AAD3-4629-9C03-781709F1B7E4_1_105_c.jpeg" width="1200" height="750">
+    </div>
+    <div class="carousel-item">
+        <img src="B5E4AE8E-CA75-4A60-9059-0752501A01DE_1_105_c.jpeg" width="1200" height="750">
+    </div>
+    <div class="carousel-item">
+        <img src="3406DC5D-CB77-429B-B34B-91265A09DB10_1_105_c.jpeg" width="1200" height="750">
+    </div>
+    <div class="carousel-item">
+        <img src="image.png" width="1200" height="750">
+    </div>
+    <div class="carousel-item">
+        <img src="10D462FB-474B-422B-A3C1-7C1EE50AE24E_1_105_c.jpeg" width="1200" height="750">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  </div>
+  </div>
+    </main>
+    <div class="container">
+    <main class="questionnaire">
+      <p>Q1「めんそーれ」の意味は？</p>
+      <div class="q-1">
+      <button type="button" class="btn btn-primary q-1btn">いらっしゃい</button><button type="button" class="btn btn-primary q-1btn">どうにかなるさ</button><button type="button" class="btn btn-primary q-1btn">初めまして</button>
+      </div>
+      <div>
+        <p class="q-1result"></p>
+      </div>
+      <p>Q2「ちゅらうみ」を漢字で書いてください</p>
+      <input type="text" name="" class="input q-2input"$(>
+      <p>Q3 沖縄方言で「私」はどれ？</p>
+      <div class="q-1">
+      <button type="button" class="btn btn-primary q-3btn">「やー」</button><button type="button" class="btn btn-primary q-3btn">「わー」</button><button type="button" class="btn btn-primary q-3btn">「まー」</button><button type="button" class="btn btn-primary q-3btn">「ぬー」</button>
+      </div>
+      <div>
+        <p class="q-3result"></p>
+      </div>
+      <p>Q4 沖縄そばにかける泡盛でできた汁物は？</p>
+      <input type="text" name="" class="input q-4input">
+      <p>Q5「タンナファクルー」はどれ？</p>
+      <div class="q-5">
+      <div class="img-div"><img class="q-5imgs" src="compressed_thumbnail_square_large.jpg"><p class="q-5choice">A</p></div>
+      <div class="img-div"><img class="q-5imgs" src="紅芋.jpg"><p class="q-5choice">B</p></div>
+      <div class="img-div"><img class="q-5imgs" src="download.jpeg"><p class="q-5choice">C</p></div>
+      </div>
+      <div>
+        <p class="q-5result"></p>
+      </div>
+      <p>Q6「沖縄の伝統的な楽器は？</p>
+      <input type="text" name="" class="input q-6input">
+      <p>Q7 ゆうこの旧姓はどれ？</p>
+      <div class="q-1">
+      <button type="button" class="btn btn-primary q-7btn">「ロビンソン」</button><button type="button" class="btn btn-primary q-7btn">「比嘉」</button><button type="button" class="btn btn-primary q-7btn">「金城」</button><button type="button" class="btn btn-primary q-7btn">「我那覇」</button>
+      </div>
+      <div>
+        <p class="q-7result"></p>
+      </div>
+      <!-- Button trigger modal -->
+
+      <button type="button" class="btn btn-success btn-lg submit" data-toggle="modal" data-target="#exampleModal">Submit</button>
+      
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">あなたの沖縄県民度は...</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary close" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </main>
+    </div>
+
+  </div>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script type="text/javascript" src="okinawatest.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>

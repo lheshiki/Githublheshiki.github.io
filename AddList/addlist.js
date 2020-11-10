@@ -117,7 +117,9 @@ btn2.addEventListener('click',function(){ let programming_rules = document.query
 										  			 rule.textContent === '短気、傲慢、怠惰であるべし' ||
 										  			 rule.textContent === '仲間、講師、時間を有効活用すべし'
 										  		   )
-										  		   {res++}
+										  		   {res++ 
+										  		   	console.log(rule.textContent)
+										  		   	console.log('ググるべし')}
 										  		else{rule.style.color ='red'}
 										  	  } 
 										  	  	

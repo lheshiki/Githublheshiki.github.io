@@ -1,0 +1,48 @@
+p{text-align: center;
+  font-size: 40px;
+  margin-bottom: 40px;
+  background-color: black;
+  color: white;}
+
+h2{padding-bottom: 30px;}
+
+main{margin-top: 50px;}
+
+.questionnaire{display: flex;
+				flex-direction: column;
+				justify-content: center;
+			    align-items: center;}
+.input{margin-bottom: 60px;
+       width: 200px;
+       height: 50px;
+       text-align: center;
+       font-size: 40px;}
+
+.q-1{display: flex;
+     justify-content: space-around;}
+
+.btn{margin-right: 20px;
+     margin-bottom: 40px;
+     font-size: 30px;}
+
+.q-5{display: flex;}
+
+.q-5imgs{width: 300px;
+	     height: 300px;
+	     margin-bottom: 40px;}  
+.img-div p{color: #007bff;}
+
+.q-5choice:hover{opacity: 0.5;}
+
+.q-1result,
+.q-3result,
+.q-5result,
+.q-7result{margin-bottom: 40px;}
+
+.close{font-size: 15px;}
+
+.fas{font-size: 40px;}
+
+body{background-image: url(シーサー.png)}
+
+.carousel-item>img{border-radius: 5px;}
